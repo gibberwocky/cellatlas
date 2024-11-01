@@ -1,5 +1,5 @@
 from seqspec.utils import load_spec
-from seqspec.seqspec_find import run_find_by_type
+from seqspec.seqspec_find import run_find
 from seqspec.utils import region_ids_in_spec
 from seqspec.seqspec_index import run_index
 from seqspec.seqspec_onlist import run_onlist
