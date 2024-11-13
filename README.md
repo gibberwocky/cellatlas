@@ -1,6 +1,9 @@
-# Universal preprocessing of single-cell genomics data
+# FORK: Universal preprocessing of single-cell genomics data
+
+* This is a fork of the source [cellatas](https://github.com/cellatlas/cellatlas.git) with a view to updating to work with the latest version of [seqspec](https://github.com/pachterlab/seqspec.git).*
 
 The cellatlas tool uses seqspec and kallisto bustools to facilitate universal preprocessing of single-cell genomics data.
+
 
 
 ## Installation
