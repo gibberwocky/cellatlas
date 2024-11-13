@@ -1,5 +1,5 @@
 from seqspec.utils import load_spec
-from seqspec.seqspec_find import run_find
+from seqspec.seqspec_find import find_by_region_type
 from seqspec.utils import region_ids_in_spec
 from seqspec.seqspec_index import run_index
 from seqspec.seqspec_onlist import run_onlist
@@ -43,10 +43,11 @@ class UniformData:
         ]
 
         # filter the fastqs to feature fastqs (the type being feature associated with the modality)
-        rgns = run_find_by_type(
+        rgns = find_by_region_type(
             self.seqspec, self.modality, MOD2FEATURE.get(self.modality.upper(), "")
         )
-        relevant_fqs = [rgn.parent_id for rgn in rgns]
+        # Added error handling for case where find_by_region_type() returns None (using if rgns else [])
+        relevant_fqs = [rgn.parent_id for rgn in rgns] if rgns else []
         fqs = [f for f in self.all_fastqs if os.path.basename(f) in relevant_fqs]
         self.spec_feature_fastqs = fqs
 
