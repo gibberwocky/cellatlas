@@ -4,15 +4,12 @@
 
 ## Hackathon
 
-Notes for hackathon available [here]
+Notes for hackathon [here]
 (https://htmlpreview.github.io/?https://github.com/gibberwocky/cellatlas/blob/main/Hackathon.md)
-
 
 # Universal preprocessing of single-cell genomics data
 
 The cellatlas tool uses seqspec and kallisto bustools to facilitate universal preprocessing of single-cell genomics data.
-
-
 
 ## Installation
 The cellatlas command-line tool can be installed with pip:
