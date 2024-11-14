@@ -12,16 +12,23 @@ output:
 params:
 ---
 
+[html preview](https://htmlpreview.github.io/?https://github.com/gibberwocky/cellatlas/blob/main/Hackathon.html)
+
 # Objective
 
 Update [cellatlas](https://github.com/cellatlas/cellatlas)(v.0.0.0) to work with the latest release of [seqspec](https://github.com/pachterlab/seqspec)(v.0.3.1). The current release of [cellatlas] works with an in-between release of [seqspec] which appears to be based on the [seqspec] v.0.2.0 specification.
 
-# seqspec specifications
+## seqspec specification
 
-* <a href="./seqspec-specifications/v0.1.1/SPECIFICATION.md" target="_blank">v0.1.1k</a>
-* [v0.1.1](./seqspec-specifications/v0.1.1/SPECIFICATION.md)
-* [v0.2.0](./seqspec-specifications/v0.2.0/SPECIFICATION.md)
-* [v0.3.1](./seqspec-specifications/v0.3.1/SPECIFICATION.md)
+* [v0.1.1](seqspec-specifications/v0.1.1/SPECIFICATION.md)
+* [v0.2.0](seqspec-specifications/v0.2.0/SPECIFICATION.md)
+* [v0.3.1](seqspec-specifications/v0.3.1/SPECIFICATION.md)
+
+## seqspec source
+
+* [v0.1.1](seqspec-source/v0.1.1)
+* [v0.2.0](seqspec-source/v0.2.0)
+* [v0.3.1](seqspec-source/v0.3.1)
 
 
 ### Installing seqspec in-between release
