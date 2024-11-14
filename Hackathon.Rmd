@@ -24,9 +24,9 @@ Update [cellatlas](https://github.com/cellatlas/cellatlas)(v.0.0.0) to work with
 
 ## seqspec source
 
-* [v0.1.1](seqspec-source/v0.1.1)
-* [v0.2.0](seqspec-source/v0.2.0)
-* [v0.3.1](seqspec-source/v0.3.1)
+* [v0.1.1](https://github.com/gibberwocky/cellatlas/tree/main/seqspec-source/v0.1.1/seqspec)
+* [v0.2.0](https://github.com/gibberwocky/cellatlas/tree/main/seqspec-source/v0.2.0/seqspec)
+* [v0.3.1](https://github.com/gibberwocky/cellatlas/tree/main/seqspec-source/v0.3.1/seqspec)
 
 
 ### Installing seqspec in-between release
