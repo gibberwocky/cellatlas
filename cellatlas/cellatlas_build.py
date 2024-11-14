@@ -83,13 +83,15 @@ def validate_build_args(parser, args):
     fasta = args.fa
     gtf = args.g
     feature_barcodes = args.fb
-
     modalities = args.m
     seqspec_fns = args.s
     outputs = args.o
     joint = args.joint
 
     len(set(fastqs)) == len(fastqs) or parser.error("FASTQs must be unique")
+
+    
+    print("\033[94mvalidate_build_args:\n\033[0m{}".format(args))
 
     # Case 1, O,M,S: (1, 1, 1)
     if len(set(modalities)) == 1 and len(outputs) == 1 and len(seqspec_fns) == 1:

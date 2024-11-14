@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: cellatlas
+Version: 0.0.0
+Home-page: https://github.com/cellatlas/cellatlas
+Author: Sina Booeshaghi
+Author-email: sbooeshaghi@gmail.com
+Maintainer: Sina Booeshaghi
+Maintainer-email: sbooeshaghi@gmail.com
+License: MIT
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# FORK: Universal preprocessing of single-cell genomics data
+
+*This is a fork of the source [cellatas](https://github.com/cellatlas/cellatlas.git) with a view to updating to work with the latest version of [seqspec](https://github.com/pachterlab/seqspec.git).*
+
+The cellatlas tool uses seqspec and kallisto bustools to facilitate universal preprocessing of single-cell genomics data.
+
+
+
+## Installation
+The cellatlas command-line tool can be installed with pip:
+
+```bash
+pip install git+https://github.com/cellatlas/cellatlas.git
+```
+
+and can be run with 
+```bash
+cellatlas build \
+-o out \
+-m modality \
+-s spec.yaml \
+-fa http://ftp.ensembl.org/pub/release-109/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz \
+-g http://ftp.ensembl.org/pub/release-109/gtf/homo_sapiens/Homo_sapiens.GRCh38.109.gtf.gz \
+-fb feature_barcodes.txt \
+fastqs/R1.fastq.gz fastqs/R2.fastq.gz",
+```
+- `-o` is the output folder
+- `-m` is the modality (rna/atac etc)
+- `-s` is the `seqspec` for the supplied FASTQs
+- `-fa` is either a link to the genome FASTA or the file itself
+- `-g` is either a link to the genome annotation (GTF) or the file itself
+- `-fb` is optional and is the feature barcode file for tag/protein/crispr assays
+
+FASTQs are supplied at the end of the command in any order.

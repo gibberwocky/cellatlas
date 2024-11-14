@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+cellatlas/UniformData.py
+cellatlas/__init__.py
+cellatlas/cellatlas_build.py
+cellatlas/main.py
+cellatlas/utils.py
+cellatlas.egg-info/PKG-INFO
+cellatlas.egg-info/SOURCES.txt
+cellatlas.egg-info/dependency_links.txt
+cellatlas.egg-info/entry_points.txt
+cellatlas.egg-info/not-zip-safe
+cellatlas.egg-info/requires.txt
+cellatlas.egg-info/top_level.txt
