@@ -1,0 +1,31 @@
+---
+title: "<span style='font-size: 32px'>Hackathon: cellatlas + seqspec</style>"
+author: "David Wragg | [Kang-Berg Lab](https://kangberglab.com) & [Morgan Lab](https://www.morganlab.co.uk)"
+date:   "`r Sys.Date()`"
+output:
+  rmdformats::downcute:
+    downcute_theme:   "chaos"
+    code_folding: show
+    self_contained: true
+    thumbnails: false
+    lightbox: true
+params:
+---
+
+# Objective
+
+Update [cellatlas](https://github.com/cellatlas/cellatlas)(v.0.0.0) to work with the latest release of [seqspec](https://github.com/pachterlab/seqspec)(v.0.3.1). The current release of [cellatlas] works with an in-between release of [seqspec] which appears to be based on the [seqspec] v.0.2.0 specification.
+
+# seqspec specifications
+
+* <a href="./seqspec-specifications/v0.1.1/SPECIFICATION.md" target="_blank">v0.1.1k</a>
+* [v0.1.1](./seqspec-specifications/v0.1.1/SPECIFICATION.md)
+* [v0.2.0](./seqspec-specifications/v0.2.0/SPECIFICATION.md)
+* [v0.3.1](./seqspec-specifications/v0.3.1/SPECIFICATION.md)
+
+
+### Installing seqspec in-between release
+
+```bash
+pip install git+https://github.com/pachterlab/seqspec.git@9471a317f524c289ee6582c1889cdeac0c5396b2
+```
