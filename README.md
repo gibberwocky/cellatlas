@@ -4,8 +4,7 @@
 
 ## Hackathon
 
-Notes for hackathon [here]
-(https://htmlpreview.github.io/?https://github.com/gibberwocky/cellatlas/blob/main/Hackathon.md)
+Notes for hackathon [here](https://github.com/gibberwocky/cellatlas/blob/main/Hackathon.md)
 
 # Universal preprocessing of single-cell genomics data
 
