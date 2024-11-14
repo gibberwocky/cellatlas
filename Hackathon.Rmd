@@ -12,8 +12,6 @@ output:
 params:
 ---
 
-[html preview](https://htmlpreview.github.io/?https://github.com/gibberwocky/cellatlas/blob/main/Hackathon.html)
-
 # Objective
 
 Update [cellatlas](https://github.com/cellatlas/cellatlas)(v.0.0.0) to work with the latest release of [seqspec](https://github.com/pachterlab/seqspec)(v.0.3.1). The current release of [cellatlas] works with an in-between release of [seqspec] which appears to be based on the [seqspec] v.0.2.0 specification.
