@@ -24,6 +24,11 @@ Update [cellatlas v0.0.0](https://github.com/cellatlas/cellatlas) to work with [
 
 The `v0.0.0` YAML is provided with the `cellatlas` SPLiTSeq example and works with the `seqspec` in-between release. The `v0.3.0` YAML should be the same specification as `v0.3.1` as the changelog indicates no changes to the specification.
 
+A tutorial on generating the YAML for the SPLiTSeq [publication](https://www.science.org/doi/10.1126/science.aam8999) data is available [here](https://github.com/pachterlab/seqspec/blob/main/docs/TUTORIAL_COMPLEX.md).
+
+![Overview of SPLiTSeq]https://www.science.org/doi/10.1126/science.aam8999#F1
+
+
 ### seqspec source
 
 * [v0.1.1](https://github.com/gibberwocky/cellatlas/tree/main/seqspec-source/v0.1.1/seqspec)
@@ -86,3 +91,5 @@ This should return `./out/cellatlas_info.json`, which contains the commands to r
 kb ref -i ./out/index.idx -g ./out/t2g.txt -f1 ./out/transcriptome.fa Mus_musculus.GRCm39.dna.primary_assembly.fa.gz Mus_musculus.GRCm39.109.gtf.gz 
 kb count -i ./out/index.idx -g ./out/t2g.txt -x 1,10,18,1,48,56,1,78,86:1,0,10:0,0,140 -w /uoa/home/s14dw4/cellatlas-example/onlist_joined.txt -o out --h5ad -t 2 ./fastqs/R1.fastq.gz ./fastqs/R2.fastq.gz
 ```
+
+The full `cellatlas` SPLiTSeq example is available [here](https://github.com/cellatlas/cellatlas/blob/main/examples/rna-splitseq/preprocess.ipynb).
