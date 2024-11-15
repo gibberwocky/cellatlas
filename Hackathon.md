@@ -6,34 +6,26 @@ Update [cellatlas v0.0.0](https://github.com/cellatlas/cellatlas) to work with [
 
 ## Resources
 
-### cellatlas source
+### cellatlas
 
-* [v0.0.0](https://github.com/cellatlas/cellatlas/tree/main/cellatlas)
-* **[this fork](https://github.com/gibberwocky/cellatlas/tree/main/cellatlas)**
+| source |
+| --- |
+| [v0.0.0](https://github.com/cellatlas/cellatlas/tree/main/cellatlas) |
+| **[this fork](https://github.com/gibberwocky/cellatlas/tree/main/cellatlas)** |
 
-### seqspec specification
+### seqspec
 
-* [v0.1.1](seqspec-specifications/v0.1.1/SPECIFICATION.md)
-* [v0.2.0](seqspec-specifications/v0.2.0/SPECIFICATION.md)
-* [v0.3.1](seqspec-specifications/v0.3.1/SPECIFICATION.md)
-
-### seqspec SPLiTSeq example YAML
-
-* [v0.0.0](https://github.com/cellatlas/cellatlas/blob/main/examples/rna-splitseq/spec.yaml)
-* [v0.3.0](https://github.com/pachterlab/seqspec/blob/main/examples/specs/SPLiT-seq/spec.yaml)
+| source | specification | example YAML |
+| --- | --- | --- |
+| [v0.1.1](https://github.com/gibberwocky/cellatlas/tree/main/seqspec-source/v0.1.1/seqspec) | [v0.1.1](seqspec-specifications/v0.1.1/SPECIFICATION.md) | [v0.0.0](https://github.com/cellatlas/cellatlas/blob/main/examples/rna-splitseq/spec.yaml) |
+| [v0.2.0](https://github.com/gibberwocky/cellatlas/tree/main/seqspec-source/v0.2.0/seqspec) | [v0.2.0](seqspec-specifications/v0.2.0/SPECIFICATION.md) | [v0.3.0](https://github.com/pachterlab/seqspec/blob/main/examples/specs/SPLiT-seq/spec.yaml) |
+| [v0.3.1](https://github.com/gibberwocky/cellatlas/tree/main/seqspec-source/v0.3.1/seqspec) | [v0.3.1](seqspec-specifications/v0.3.1/SPECIFICATION.md) | |
 
 The `v0.0.0` YAML is provided with the `cellatlas` SPLiTSeq example and works with the `seqspec` in-between release. The `v0.3.0` YAML should be the same specification as `v0.3.1` as the changelog indicates no changes to the specification.
 
 A tutorial on generating the YAML for the SPLiTSeq [publication](https://www.science.org/doi/10.1126/science.aam8999) data is available [here](https://github.com/pachterlab/seqspec/blob/main/docs/TUTORIAL_COMPLEX.md).
 
 ![Overview of SPLiTSeq](splitseq/360_176_f1.jpeg)
-
-
-### seqspec source
-
-* [v0.1.1](https://github.com/gibberwocky/cellatlas/tree/main/seqspec-source/v0.1.1/seqspec)
-* [v0.2.0](https://github.com/gibberwocky/cellatlas/tree/main/seqspec-source/v0.2.0/seqspec)
-* [v0.3.1](https://github.com/gibberwocky/cellatlas/tree/main/seqspec-source/v0.3.1/seqspec)
 
 ## Maxwell setup
 
