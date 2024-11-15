@@ -26,7 +26,7 @@ The `v0.0.0` YAML is provided with the `cellatlas` SPLiTSeq example and works wi
 
 A tutorial on generating the YAML for the SPLiTSeq [publication](https://www.science.org/doi/10.1126/science.aam8999) data is available [here](https://github.com/pachterlab/seqspec/blob/main/docs/TUTORIAL_COMPLEX.md).
 
-![Overview of SPLiTSeq]https://www.science.org/doi/10.1126/science.aam8999#F1
+![Overview of SPLiTSeq](https://www.science.org/doi/10.1126/science.aam8999#F1)
 
 
 ### seqspec source
