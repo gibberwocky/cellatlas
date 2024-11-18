@@ -35,6 +35,25 @@ class UniformData:
         self.output = output
         self.all_fastqs = fastqs
         self.all_feature_fastqs = all_feature_fastqs
+
+        # WIP start ----->
+        # region_ids_in_spec(seqspec, modality, region_ids) is from seqspec.utils.py [LN:111]
+        region_ids = [os.path.basename(i) for i in self.all_fastqs]
+        print("\t\033[94m{}\033[0m\n".format(region_ids))
+        # I believe it is looking for the fastq as a region_id, and is returning an empty list as a result.
+        # That is no longer the specification. The fastq data is now recorded in a sequence_spec object:
+        print("\n\033[94mget_seqspec:\033[0m\n{}".format(self.seqspec.get_seqspec(modality)))   
+        # So will not appear in the regions (library_spec object):
+        print("\n\033[94mget_libspec:\033[0m\n{}".format(self.seqspec.get_libspec(modality)))                
+        # Below lines are from the function:
+        spec = seqspec.get_libspec(modality)
+        found = []
+        for region_id in region_ids:
+            found += [r.region_id for r in spec.get_region_by_id(region_id)]
+            print("\t\033[94m{}\033[0m\n".format(region_id))
+        # This needs to return some region(s) before we can proceed
+        # <----- WIP end
+
         rids_in_spec = region_ids_in_spec(
             self.seqspec, self.modality, [os.path.basename(i) for i in self.all_fastqs]
         )
@@ -51,7 +70,6 @@ class UniformData:
         self.spec_feature_fastqs = fqs
 
         # note the use of rids_in_spec here, which is the same as the rids_in_spec above
-        print("\n\033[94mself:\033[0m\n{}".format(vars(self)))
         print("\n\033[94mrids_in_spec:\033[0m\n{}".format(rids_in_spec))
         self.x_string = run_index(self.seqspec_fn, self.modality, rids_in_spec, fmt="kb")
 
