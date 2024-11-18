@@ -85,15 +85,21 @@ git clone https://github.com/cellatlas/cellatlas.git
 # Clone seqspec repo for SPLiTseq seqspec YAML
 git clone https://github.com/pachterlab/seqspec.git
 
+# Move fastqs folder and copy seqspec YAML and barcodes
+mv ./cellatlas/examples/rna-splitseq/fastqs ./
+cp ./seqspec/examples/specs/SPLiT-seq/spec.yaml ./
+cp ./seqspec/examples/specs/SPLiT-seq/*.txt ./
+
+# Update the filenames in spec.yaml to ./fastqs/R1.fastq.gz and ./fastqs/R2.fastq.gz
+
 # Run cellatlas
-cellatlas build -o ./out -m rna \
-  -s ./seqspec/examples/specs/SPLiT-seq/spec.yaml \
+cellatlas build -o ./out -m rna -s ./spec.yaml \
   -fa Mus_musculus.GRCm39.dna.primary_assembly.fa.gz \
   -g Mus_musculus.GRCm39.109.gtf.gz \
-  ./cellatlas/examples/rna-splitseq/fastqs/R1.fastq.gz ./cellatlas/examples/rna-splitseq/fastqs/R2.fastq.gz
+  ./fastqs/R1.fastq.gz ./fastqs/R2.fastq.gz
 ```
 
-**Note** | The fastq data contains `R1.fastq.gz` and `R2.fastq.gz`, while `spec.yaml` also refers to `I1.fastq.gz` - this file is not present in the `cellatlas` repo. The `spec.yaml` indicates this is a 6 bp i7 index, which is reported in the [documentation](https://github.com/pachterlab/seqspec/blob/main/docs/TUTORIAL_COMPLEX.md) to be identifiable in [Supplementary Table 12](https://www.science.org/doi/suppl/10.1126/science.aam8999/suppl_file/aam8999_tables12.xlsx) of the [Rosenberg et al. SPLiTseq paper](https://www.science.org/doi/10.1126/science.aam8999). In addition, the filenames for the barcodes are different (i.e. `./cellatlas/examples/rna-splitseq/barcode-1_onlist.txt.gz` is `onlist_round1.txt` in `spec.yaml`), require updating.
+**Note** | The fastq data contains `R1.fastq.gz` and `R2.fastq.gz`, while `spec.yaml` also refers to `I1.fastq.gz` - this is not present in the `cellatlas` repo, not is it apparently available from the [online archive](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE110823). The `spec.yaml` indicates this is a 6 bp i7 index, which is reported in the [documentation](https://github.com/pachterlab/seqspec/blob/main/docs/TUTORIAL_COMPLEX.md) to be identifiable in [Supplementary Table 12](https://www.science.org/doi/suppl/10.1126/science.aam8999/suppl_file/aam8999_tables12.xlsx) of the [Rosenberg et al. SPLiTseq paper](https://www.science.org/doi/10.1126/science.aam8999). These 6 bp barcodes are listed in `onlist_round4.txt`, so this file could be used to generage `I1.fastq.gz` if it is required (i.e. `cp onlist_round4.txt ./fastqs/I1.fastq && gzip ./fastqs/I1.fastq`).
 
 `cellatlas build` should return `./out/cellatlas_info.json`, which contains the commands to run the `kallisto-bustools` pipeline on Maxwell:
 

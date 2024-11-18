@@ -51,7 +51,8 @@ class UniformData:
         self.spec_feature_fastqs = fqs
 
         # note the use of rids_in_spec here, which is the same as the rids_in_spec above
-        print("\nself:\n{}".format(vars(self)))
+        print("\n\033[94mself:\033[0m\n{}".format(vars(self)))
+        print("\n\033[94mrids_in_spec:\033[0m\n{}".format(rids_in_spec))
         self.x_string = run_index(self.seqspec_fn, self.modality, rids_in_spec, fmt="kb")
 
         self.fasta = fasta

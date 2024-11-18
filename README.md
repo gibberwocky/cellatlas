@@ -1,10 +1,10 @@
 # FORK: cellatlas
 
-*This is a fork of the source [cellatas](https://github.com/cellatlas/cellatlas.git) with a view to updating to work with the latest version of [seqspec](https://github.com/pachterlab/seqspec.git).*
+*This is a fork of the source [cellatlas](https://github.com/cellatlas/cellatlas.git) with a view to updating to work with the latest version of [seqspec](https://github.com/pachterlab/seqspec.git).*
 
 ## Hackathon
 
-Notes for hackathon [here](https://github.com/gibberwocky/cellatlas/blob/main/Hackathon.md)
+Notes for hackathon [here](https://github.com/gibberwocky/cellatlas/blob/main/Hackathon.md).
 
 # Universal preprocessing of single-cell genomics data
 
